@@ -25,9 +25,10 @@ const ButtonsContainer = ({ onButtonClick }) => {
     <div className={styles.buttonsContainer}>
       {buttonNames.map((buttonName) => (
         <button
+          key={buttonName}
           className={styles.button}
-          // see below IMPORTANT
-          onClick={() => onButtonClick(buttonName)}> 
+          onClick={() => onButtonClick(buttonName)} // see below IMPORTANT
+          > 
           {buttonName}
         </button>
       ))}
@@ -61,7 +62,8 @@ export default ButtonsContainer;
 
 /*
     --> onClick={onButtonClick}
-        - If the onButtonClick function does not require any parameters and only needs to handle the click event, then using onClick={onButtonClick} is perfectly fine. In this case, onButtonClick will be called when the button is clicked, and it will receive the click event as its argument.
+        - If the onButtonClick function does not require any parameters and only needs to handle the click event, then using 
+        onClick={onButtonClick} is perfectly fine. In this case, onButtonClick will be called when the button is clicked, and it will receive the click event as its argument.
 
       - If onButtonClick needs to receive additional arguments (such as the button name), then using onClick={onButtonClick} directly won't work. Instead, you need to pass an arrow function or another function that calls onButtonClick with the necessary parameters.
       onClick={() => onButtonClick(buttonName)}
