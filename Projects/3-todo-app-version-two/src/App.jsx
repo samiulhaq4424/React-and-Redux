@@ -1,7 +1,8 @@
+import "./App.css";
+
 import AppName from "./components/AppName";
 import AddTodo from "./components/AddTodo";
 import TodoItems from "./components/TodoItems";
-import "./App.css";
 
 function App() {
   const todoItems = [ //array of objects
@@ -23,8 +24,7 @@ function App() {
     <center>
       <AppName />
       <AddTodo />
-      {/* passing array 'todoItems' below */}
-      <TodoItems todoItems={todoItems}></TodoItems>
+      <TodoItems todoItems={todoItems}></TodoItems> {/* passing array 'todoItems' */}
     </center>
   );
 }
