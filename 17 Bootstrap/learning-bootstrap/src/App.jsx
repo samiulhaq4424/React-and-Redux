@@ -1,11 +1,13 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
+{/* below button code is taken from: https://getbootstrap.com/docs/5.3/components/buttons/ */}
+{/* here, added my class "myButton" to give margin to buttons */}
+{/* class changed to className in bootstrap code */}
 function App() {
   return (
     <div>
-      {/* below button code is taken from: https://getbootstrap.com/docs/5.3/components/buttons/ */}
-      {/* here, added my class "myButton" to give margin to buttons */}
       <button type="button" className="btn btn-primary myButton">
         Primary
       </button>
