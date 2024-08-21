@@ -33,7 +33,7 @@ function AddTodo({ onNewItem }) {
           />
         </div>
         <div className="col-2">
-          {/* in "form", button has by default type="submit", see what will happen if you remove "type" */}
+          {/* in "form", button has by default type="submit", even if you don't write it chalega, see what will happen if you remove "type" */}
           <button type="submit" className="btn btn-success kg-button"> 
             {/* we are using react-icons "BiMessageAdd", write inside <name/> by copying name from the website */}
             <BiMessageAdd />  
