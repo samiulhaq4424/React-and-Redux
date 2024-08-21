@@ -1,0 +1,6 @@
+.display {
+  margin: 10px;
+  width: 175px;
+  /* font-size for text in input, so now the size of input text i.e. display will increase height wise */
+  font-size: 25px;
+}

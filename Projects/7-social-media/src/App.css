@@ -1,0 +1,32 @@
+.app-container {
+  /* see why flex used */
+  display: flex;
+}
+
+.content { 
+  /* so Header takes 100% width */
+  width: 100%;
+}
+
+.mySidebar {
+  /* setting sidebar min height */
+  min-height: 800px;
+}
+
+.mypost-card {
+  margin: 20px 50px;
+}
+
+.myhashtag {
+  margin: 0px 3px;
+}
+
+.myreactions {
+  margin: 15px 0 0 0;
+}
+
+.mycreate-post {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+}

@@ -1,0 +1,24 @@
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  /* if you uncomment it, it will only take a portion of the parent container,so to take the whole space provided, 100% */
+  width: 100%;
+}
+
+.Mybutton {
+  /* The min-width property defines the minimum width of an element. If the content is smaller than the minimum width, the minimum width will be applied. If the content is larger than the minimum width, the min-width property has no effect. */
+  min-width: 80px;
+}
+
+.sam-row {
+  margin: 10px 5px;
+}
+
+.myClass{
+  text-align: left;
+}
