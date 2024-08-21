@@ -3,7 +3,7 @@ import { useReducer } from "react";
 
 /* 
 --> "createContext" is a method used to create a 'Context object'. Context allows you to share values between components without having to pass props manually through every level of the component tree. This is especially useful for global data such as user authentication status, themes, or configuration settings.
-    - createContext function in React returns an object containing two main properties:
+    - "createContext" function in React "returns an object" containing two main properties:
       1) Provider: A React component that makes the context available to all its child components. You use this component to pass down the context value to the components that need it.
       2) Consumer: A React component that subscribes to the context changes. It allows components to consume the context value provided by a Provider.
 
@@ -13,7 +13,8 @@ import { useReducer } from "react";
         The "reducer" function returns the "new state based on the action".
 
     - "useReducer" is called with the "reducer" function and the initial state. 
-    - The useReducer hook in React returns an array with two elements:
+
+    - The "useReducer" hook in React "returns an array" with two elements:
         1) state: The current state value after applying the latest action. This represents the state of your component after processing any dispatched actions.
         2) dispatch: A function that you use to send actions to the reducer function. This function allows you to update the state by passing action objects to it, which the reducer function then processes to determine the new state.
 
@@ -45,7 +46,7 @@ const TodoItemsContextProvider = ({ children }) => {
   const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, []);
 
   const addNewItem = (itemName, itemDueDate) => { //action ka object for adding new item
-    const newItemAction = {
+    const newItemAction = { //action ka object for adding item
       type: "NEW_ITEM",
       payload: {
         itemName,
@@ -55,8 +56,8 @@ const TodoItemsContextProvider = ({ children }) => {
     dispatchTodoItems(newItemAction);
   };
 
-  const deleteItem = (todoItemName) => { //action ka object for deleting item
-    const deleteItemAction = {
+  const deleteItem = (todoItemName) => { 
+    const deleteItemAction = { //action ka object for deleting item
       type: "DELETE_ITEM",
       payload: {
         itemName: todoItemName,
@@ -67,7 +68,7 @@ const TodoItemsContextProvider = ({ children }) => {
 
   return (
     <TodoItemsContext.Provider
-      value={{
+      value={{ //value takes an object
         todoItems,
         addNewItem,
         deleteItem,

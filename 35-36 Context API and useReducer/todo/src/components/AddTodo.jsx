@@ -29,15 +29,16 @@ function AddTodo() {
           <input
             type="text"
             placeholder="Enter Todo Here"
-            value={todoName}
             onChange={handleNameChange} // Event handler for input changes
+            value={todoName}
           />
         </div>
         <div className="col-4">
           <input 
             type="date" 
+            onChange={handleDateChange}
             value={dueDate} 
-            onChange={handleDateChange}/>
+            />
         </div>
         <div className="col-2">
           <button
